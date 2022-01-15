@@ -16,7 +16,8 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (org org-superstar htmlize gnuplot-mode use-package spacemacs-theme org-bullets))))
+    (org org-superstar htmlize gnuplot-mode use-package spacemacs-theme org-bullets)))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,3 +42,7 @@
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+
+;; set transparency
+(set-frame-parameter (selected-frame) 'alpha '(95 95))
+(add-to-list 'default-frame-alist '(alpha 95 95))
